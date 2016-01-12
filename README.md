@@ -1,7 +1,6 @@
 # soluble/spreadsheet
 
 [![PHP Version](http://img.shields.io/badge/php-5.4+-ff69b4.svg)](https://packagist.org/packages/soluble/spreadsheet)
-[![HHVM Status](http://hhvm.h4cc.de/badge/soluble/spreadsheet.png?style=flat)](http://hhvm.h4cc.de/package/soluble/spreadsheet)
 [![Build Status](https://travis-ci.org/belgattitude/soluble-spreadsheet.png?branch=master)](https://travis-ci.org/belgattitude/soluble-spreadsheet)
 [![Code Coverage](https://scrutinizer-ci.com/g/belgattitude/soluble-spreadsheet/badges/coverage.png?s=aaa552f6313a3a50145f0e87b252c84677c22aa9)](https://scrutinizer-ci.com/g/belgattitude/soluble-spreadsheet)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/belgattitude/soluble-spreadsheet/badges/quality-score.png?s=6f3ab91f916bf642f248e82c29857f94cb50bb33)](https://scrutinizer-ci.com/g/belgattitude/soluble-spreadsheet)
@@ -13,10 +12,9 @@
 
 Currently a wrapper for LibXL php extension
 
-
 ## Requirements
 
-- PHP engine 5.4+, 7.0+ or HHVM >= 3.2.
+- PHP engine 5.4+, 7.0+ 
 - [libxl php extension](https://github.com/iliaal/php_excel.git)
 
 ## Documentation
