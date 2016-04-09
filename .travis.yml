@@ -1,5 +1,9 @@
 language: php
 
+env:
+    global:
+        - SEND_COVERAGE=false
+
 matrix:
   include:
     - php: 5.5
@@ -11,12 +15,7 @@ matrix:
         - LIBXL_PHP_VERSION=php5
     - php: 7
       env:
-        - SEND_COVERAGE=true
         - LIBXL_PHP_VERSION=php7
-            
-env:
-    global:
-        - SEND_COVERAGE=false
 
 before_script:
   - mkdir -p test/logs
