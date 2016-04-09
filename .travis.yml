@@ -1,15 +1,16 @@
 language: php
 
-php:  
-  - 5.4
-  - 5.5
-  - 7.0
-  
 matrix:
-    include:
-        - php: 5.6
-          env: SEND_COVERAGE=true
-          
+  include:
+    - php: 5.5
+      env:
+          - LIBXL_PHP_VERSION=php5
+    - php: 5.6
+      env:
+        - SEND_COVERAGE=true
+        - LIBXL_PHP_VERSION=php7
+    - php: 7
+            
 env:
     global:
         - SEND_COVERAGE=false
@@ -20,6 +21,8 @@ before_script:
   - mkdir -p build/logs
   - travis_retry composer self-update
   - travis_retry composer --prefer-source --dev install
+  - test/travis/install_phpexcel_extension.sh $LIBXL_PHP_VERSION
+  - echo "extension = excel.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 script: 
   - phpunit -v 
 

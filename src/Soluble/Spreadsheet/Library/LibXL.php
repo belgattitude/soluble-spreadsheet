@@ -3,7 +3,6 @@
 namespace Soluble\Spreadsheet\Library;
 
 use ExcelBook;
-use ExcelFormat;
 
 class LibXL
 {
@@ -26,10 +25,10 @@ class LibXL
      *
      * @var array
      */
-    protected static $supportedFormats = array(
+    protected static $supportedFormats = [
         self::FILE_FORMAT_XLS,
         self::FILE_FORMAT_XLSX
-    );
+    ];
 
     /**
      *
