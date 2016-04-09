@@ -27,15 +27,18 @@ soluble-spreadsheet provides a generic wrapper for generating excel documents in
 Instant installation via [composer](http://getcomposer.org/).
 
 1. Installing in your PHP project
+
     ```console
     $ php composer require soluble/spreadsheet:0.*
     ```
     Most modern frameworks will include Composer out of the box, but ensure the following file is included:
     ```php
+
     <?php
     // include the Composer autoloader
     require 'vendor/autoload.php';
     ```
+
 2. Installing libXL / php_excel extension
 
     Take a look to the [install the libxl / php_excel extension document](./doc/install/install_libxl_php_excel.md).

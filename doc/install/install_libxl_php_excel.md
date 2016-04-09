@@ -1,6 +1,6 @@
 # php_excel extension install
 
-The most up to date documentation should be available on the official iliaal/php_excel(https://github.com/iliaal/php_excel) github repo. 
+The most up to date documentation should be available on the official [iliaal/php_excel](https://github.com/iliaal/php_excel) github repo. 
 
 Alternatively, if you are using linux, you can refer to following 3 steps (updated in April 2016).
 
